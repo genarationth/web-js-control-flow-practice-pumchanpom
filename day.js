@@ -44,4 +44,21 @@ const whatIsToday = dayNum => {
     }
 }
 
+// Test whatIsToday() function
 console.log(whatIsToday(4));
+
+// Create day array
+let dayInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+// whatToday() function indicates day from day array
+const whatToday = dayNum => {
+    switch(dayNum) {
+        case dayNum:
+            return dayInWeek[dayNum];
+        default:
+            return "Invalid Number.";
+    }
+}
+
+// Test whatToday() function
+console.log(whatToday(4));
