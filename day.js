@@ -22,3 +22,26 @@ const whatDay = dayNumber => {
 
 // Test whatDay() function
 console.log(whatDay(4));
+
+// Create day object
+let day = {
+    0: 'Sunday',
+    1: 'Monday',
+    2: 'Tuesday',
+    3: 'Wednesday',
+    4: 'Thursday',
+    5: 'Friday',
+    6: 'Saturday',
+}
+
+// whatIsToday() function indicates day from day object
+const whatIsToday = dayNum => {
+    switch(dayNum) {
+        case dayNum:
+            return day[dayNum];
+        default:
+            return "Invalid Number.";
+    }
+}
+
+console.log(whatIsToday(4));
